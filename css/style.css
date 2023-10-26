@@ -1,0 +1,25 @@
+body{
+    background: #fff5e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+h1, h2, p, iframe{
+    text-align: center;
+}

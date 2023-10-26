@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestoría del Automotor Othala | Contacto</title>
+        <link rel="shortcut icon" href="./img/logo-ico.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>   
+        <header>
+            <div id = "caja">
+                <h1><img src="./img/logo othala.png" width="150" alt="Logo Gestoría Othala"></h1>
+                <h1>Gestoría del Automotor Othala</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quinessomos.html">Quienes somos</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>                              
+        
+        <main>
+            <h2>Contacto</h2>
+            <p>¿Tenés alguna consulta? Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</p>
+            <form action=""> <!--agregar dnd quiero enviarlo-->
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-form" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-form" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-form" required placeholder="(xxx) xxxx xxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-form" required placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email">
+                    <input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono">
+                    <input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp">
+                    <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+               
+                <fieldset>
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades sobre trámites del registro automotor?</label>              
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+        </main>         
+            
+        <footer>
+            <img src="./img/othala-verde.png">
+            <a href="https://api.whatsapp.com/send?phone=541134145324&text=" target="_blank">
+            <img src="./img/whatsapp (1).png" width="20" alt="whatsapp">
+            </a>
+            <a href="https://www.instagram.com/gestoriadelautomotorothala/" target="_blank">
+            <img src="./img/instagram (1).png" width="20" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/gestoriadelautomotorothala" target="_blank">
+            <img src="./img/facebook (1).png" width="20" alt="facebook">
+            </a>
+            <a href="https://gestoriadelautomotorothala.negocio.site" target="_blank">
+            <img src="./img/mundo.png" width="20" alt="página web">
+            </a>
+            <a href="mailto: gestoriadelautomotor.info@gmail.com" target="_blank">
+            <img src="./img/e-mail.png" width="20" alt="e-mail">
+            </a>
+            <p class="copyright"></p>&copy Copyright Grupo Othala - 2023
+        </footer>
+    </body>
+</html>

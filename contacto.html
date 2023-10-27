@@ -11,7 +11,9 @@
     <body>   
         <header>
             <div id = "caja">
-                <h1><img src="./img/logo othala.png" width="150" alt="Logo Gestoría Othala"></h1>
+                <a href="./index.html">
+                <img src="./img/logo othala.png" width="150" alt="Logo Gestoría Othala">
+                </a>   
                 <h1>Gestoría del Automotor Othala</h1>
                 <nav>
                     <ul>
@@ -26,19 +28,23 @@
         
         <main>
             <h2>Contacto</h2>
-            <p>¿Tenés alguna consulta? Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</p>
+            <p>¿Tenés alguna consulta?</p>
             <form action=""> <!--agregar dnd quiero enviarlo-->
-                <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-form" required>
+                <fieldset>
+                    <legend>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</legend>
+                
+                    <label for="nombreapellido">Nombre y Apellido</label><br>
+                    <input type="text" id="nombreapellido" class="input-form" required> <br>
 
-                <label for="correoelectronico">Correo Electrónico</label>
-                <input type="email" id="correoelectronico" class="input-form" required placeholder="email@dominio.com">
+                    <label for="correoelectronico">Correo Electrónico</label><br>
+                    <input type="email" id="correoelectronico" class="input-form" required placeholder="email@dominio.com"><br>
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-form" required placeholder="(xxx) xxxx xxxx">
+                    <label for="telefono">Teléfono</label><br>
+                    <input type="tel" id="telefono" class="input-form" required placeholder="(xxx) xxxx xxxx"><br>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea cols="70" rows="10" id="mensaje" class="input-form" required placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-form" required placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
+                </fieldset>
                 
                 <fieldset>
                     <legend>¿Cómo le gustaría que lo contactemos?</legend>

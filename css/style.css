@@ -345,4 +345,12 @@ form label, form legend{
     right: 0;
     transition: all 0.3s; /* Transición suave al cambiar de posición */
 }
+
+.servicios:hover {
+    transform: scale(1.05); /* Agrandar ligeramente el elemento */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra negra */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto */
+}
+
+
   

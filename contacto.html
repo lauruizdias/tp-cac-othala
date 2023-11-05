@@ -31,7 +31,7 @@
             <section class ="principal">
                 <h1 class="titulo-principal">Consultas</h1>
             </section>
-            <form action=""> <!--agregar dnd quiero enviarlo-->
+            <form action=""https://formsubmit.co/gestoriadelautomotor.info@gmail.com" method="POST""> <!--agrego dnd quiero enviarlo-->
                 <fieldset>
                     <legend>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</legend>
                 
@@ -59,12 +59,17 @@
                     
                     <label for="radio-whatsapp">
                     <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-                    
-                </fieldset>
-                        
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades sobre trámites del registro automotor?</label><br>              
                 
+                    
+                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades sobre trámites del registro automotor?</label><br>              
+                </fieldset>
+
                 <input type="submit" value="Enviar formulario" class="enviar">
+                <input type="hidden" name="_next" value="https://lauruizdias.github.io/tp-cac-othala/mail-enviado.html"> <!--confirma envío-->
+                <input type="hidden" name="_template" value="table">
+                <!--<input type="oculto" nombre="_captcha" value="false"> Habilitar o no captcha>.-->
+                <input type="hidden" name="_autoresponse" value="Hola! Hemos recibido tu mensaje, pronto te estaremos contactando.">
+
             </form>
         </main>         
             

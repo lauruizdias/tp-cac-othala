@@ -157,7 +157,7 @@ footer{
     column-gap: 10px;
     /* Agrandar los iconos y añadir sombra al pasar el mouse */
     /*transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
     /*box-shadow: 0 0 10px #FFFFFF; /* Añade una sombra blanca */
 }
 

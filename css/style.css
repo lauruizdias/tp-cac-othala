@@ -251,6 +251,10 @@ form label, form legend{
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
+.principal-mail p{
+    display: flex;
+    text-align: center;
+}
 /* Estilos para la imagen dentro de la sección de portada */
 /*.portada-img img {
     display: flex;

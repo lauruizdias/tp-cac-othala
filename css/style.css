@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(#FFFFFF, #EBE3C8, #cccccc);
-    padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación, para evitar que el contenido se oculte detrás de la barra de navegación fija */
+    /*padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación, para evitar que el contenido se oculte detrás de la barra de navegación fija */
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -261,8 +261,8 @@ form label, form legend{
 .portada-img {
     display: flex;
     width: 100%; /* Establece el ancho al 100% */
-    margin: 0; /* Elimina cualquier margen */
-    padding: 0; /* Elimina cualquier relleno */
+    /*margin: 0; /* Elimina cualquier margen */
+    /*padding: 0; /* Elimina cualquier relleno */
     overflow: hidden; /* Asegura que no se desborde del contenedor */
 }
 
@@ -274,7 +274,7 @@ form label, form legend{
     
 }
 
-/* Estilos para cuando la barra de navegación se fije */
+/* Estilos para cuando la barra de navegación se fije 
 .fixed-nav {
     position: fixed;
     top: 0;

@@ -16,37 +16,20 @@ header {
     background-color: #155F4E;    
 }    
 
-/*.cont-logo img:hover {
-    /* Agrandar el logo al pasar el mouse sobre él */
-   /* transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
-   /* transition: transform 0.3s ease; /* Añade una transición suave
-}*/
-
-
-/*@keyframes rotate-logo {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* Estilos para el contenedor de la barra de navegación */    
 .cont-nav{
     display: flex; /* Activa Flexbox */
     flex-flow: row wrap;
     overflow: hidden;
-    background-color: #888888;
+    background-color: #155F4E;
     justify-content: space-between; /* Distribuye el espacio uniformemente entre los elementos */
-    /*justify-content: right;*/
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    align-items: center ; /* Alinea los elementos verticalmente en el centro */
     width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
     padding: 0 10px; /* Añade un poco de relleno a los lados si es necesario */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
     /*position: fixed; /* Fija la barra de navegación en la parte superior */
     /*top: 0; /* Alinea la barra de navegación en la parte superior de la pantalla */
-    /*z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos */
+    z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos
 }
 
 /* Estilos para los enlaces dentro de la barra de navegación */
@@ -102,11 +85,11 @@ header {
     border-radius: 12px;
 }
 
-/*.servicios:hover {
-    transform: scale(1.05); /* Agrandar ligeramente el elemento 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra negra 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto 
-}*/
+.servicios:hover {
+    transform: scale(1.05); /* Agrandar ligeramente el elemento */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra negra */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto */
+}
 
 .servicios div:hover{
     border-color:  #155F4E;
@@ -225,7 +208,7 @@ form label, form legend{
 }
 
 
-/*.mapa {
+.mapa {
     display: flex;
     width: 940px;
     padding: 3em 0;
@@ -278,9 +261,3 @@ form label, form legend{
     left: 0;
     right: 0;
     transition: all 0.3s; /* Transición suave al cambiar de posición */
-
-
-
-
-
-  

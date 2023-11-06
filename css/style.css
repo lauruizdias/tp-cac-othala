@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(#FFFFFF, #EBE3C8, #cccccc);
+    padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación, para evitar que el contenido se oculte detrás de la barra de navegación fija */
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -12,7 +13,7 @@ body{
 
 .cont-logo img:hover {
     /* Agrandar el logo al pasar el mouse sobre él */
-    transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
+    transform: scale(0.5.0.5); /* Ajusta el valor de escala según lo que desees */
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
@@ -109,10 +110,7 @@ body{
     background-color: #FF961B; /* Cambia el color de fondo al pasar el ratón por encima */
 }
 
-/* Ajustar el padding del cuerpo para evitar que el contenido se oculte detrás de la barra de navegación fija */
-body {
-    padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación */
-}
+
 
 /* Estilos para el contenedor del logo y la barra de navegación */
 header {

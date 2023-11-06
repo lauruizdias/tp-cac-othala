@@ -10,6 +10,13 @@ function validarFormulario() {
         return false;
     }
 
+    // Validación de formato nombre
+    var nombreRegExp = /^[a-zA-Z ]+$/;
+    if (!nombre.match(nombreRegExp)) {
+        alert("Por favor, ingresa un nombre válido (solo letras y espacios).");
+        return false;
+    }
+        
     // Validación de formato de email electrónico
     var emailRegExp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     if (!email.match(emailRegExp)) {
@@ -24,7 +31,6 @@ function validarFormulario() {
         return false;
     }
 
-    return true;
     return true;
 
 

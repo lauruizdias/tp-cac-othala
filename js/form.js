@@ -2,7 +2,6 @@ function validarFormulario() {
     var nombre = document.getElementById("nombre").value;
     var email = document.getElementById("email").value;
     var tel = document.getElementById("tel").value;
-
     var mensaje = document.getElementById("mensaje").value;
 
     // Validación de campos vacíos

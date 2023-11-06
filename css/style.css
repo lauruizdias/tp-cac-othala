@@ -5,6 +5,12 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* Estilos para el contenedor del logo y la barra de navegación */
+header {
+    text-align: center;
+    background-color: #155F4E;
+}
+
 .cont-logo {
     display: flex;
     justify-content: center;
@@ -13,7 +19,7 @@ body{
 
 .cont-logo img:hover {
     /* Agrandar el logo al pasar el mouse sobre él */
-    transform: scale(0.5.0.5); /* Ajusta el valor de escala según lo que desees */
+    transform: scale(0.5,0.5); /* Ajusta el valor de escala según lo que desees */
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
@@ -27,112 +33,46 @@ body{
     }
 }
 
-    
+/* Estilos para el contenedor de la barra de navegación */    
 .cont-nav{
-    display: flex;
+    display: flex; /* Activa Flexbox */
     flex-flow: row wrap;
-    justify-content: right;
     overflow: hidden;
     background-color: #888888;
-}
-
-.cont-nav a {
-    display: flex;
-    text-align: center;
-    padding: 14px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-/* Estilos para el contenedor de la barra de navegación */
-.cont-nav {
-    display: flex; /* Activa Flexbox */
     justify-content: space-between; /* Distribuye el espacio uniformemente entre los elementos */
+    /*justify-content: right;*/
     align-items: center; /* Alinea los elementos verticalmente en el centro */
     width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
     padding: 0 10px; /* Añade un poco de relleno a los lados si es necesario */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
-}
-
-/* Estilos para los enlaces dentro de la barra de navegación */
-.cont-nav a {
-    flex: 1; /* Asigna la misma proporción a todos los enlaces */
-    text-align: center; /* Centra el texto de los enlaces */
-    /* Resto de estilos... */
-}
-
-
-.cont-nav a:hover{
-    color: #FF961B;
-    text-decoration: underline;
-}
-
-.cont-nav a:hover {
-    /* Agrandar los enlaces al pasar el mouse sobre ellos */
-    transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
-    transition: transform 0.3s ease; /* Añade una transición suave */
-}
-
-
-/* Estilos para el contenedor de la barra de navegación */
-.cont-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-    background-color: #888888; /* Color de fondo de la barra de navegación */
     position: fixed; /* Fija la barra de navegación en la parte superior */
     top: 0; /* Alinea la barra de navegación en la parte superior de la pantalla */
     z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos */
 }
 
-/* Estilos para los enlaces dentro de la barra de navegación para que parezcan botones */
+/* Estilos para los enlaces dentro de la barra de navegación */
 .cont-nav a {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    flex: 1; /* Asigna la misma proporción a todos los enlaces */
+    text-align: center; /* Centra el texto de los enlaces */
+    text-transform: uppercase;
+    color: #FFFFFF; /* Color del texto para los botones */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
     padding: 10px 15px; /* Espaciado interno para que parezcan botones */
     margin: 4px; /* Espacio entre los botones */
     background-color: #155F4E; /* Color de fondo para los botones */
-    color: white; /* Color del texto para los botones */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     border-radius: 5px; /* Bordes redondeados para los botones */
     transition: background-color 0.3s; /* Transición suave para el efecto de hover */
 }
 
-/* Estilos para el efecto hover en los enlaces/botones */
-.cont-nav a:hover {
-    background-color: #FF961B; /* Cambia el color de fondo al pasar el ratón por encima */
-}
-
-
-
-/* Estilos para el contenedor del logo y la barra de navegación */
-header {
-    text-align: center;
-    background-color: #155F4E;
-}
-
-/* Estilos para el contenedor de la barra de navegación */
-.cont-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #888888;
-    position: relative; /* Inicialmente no está fijo */
-    z-index: 1000;
-    /* Resto de tus estilos para cont-nav */
-}
-
-/* Estilos para los enlaces dentro de la barra de navegación para que parezcan botones */
-
-.cont-nav a {
-    /* Tus estilos existentes para .cont-nav a */
+.cont-nav a:hover{
+    color: #FF961B; /* Cambia el color de fondo al pasar el ratón por encima */
+    text-decoration: underline;
+    /* Agrandar los enlaces al pasar el mouse sobre ellos */
+    transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
     transition: box-shadow 0.3s; /* Transición suave para el efecto de sombra */
 }
 
@@ -140,12 +80,6 @@ header {
 .cont-nav a:hover {
     box-shadow: 0 0 10px #FFFFFF; /* Sombra blanca alrededor del botón */
     color: #FFFFFF; /* Opcional: Cambiar el color del texto si es necesario */
-}
-
-
-/* Ajustar el padding del cuerpo para evitar que el contenido se oculte debajo de la barra de navegación cuando se fije */
-body {
-    padding-top: 0; /* Inicialmente no hay padding adicional */
 }
 
 .cont-serv{
@@ -172,20 +106,21 @@ body {
     border-radius: 12px;
 }
 
-.servicios:hover {
-    transform: scale(1.05); /* Agrandar ligeramente el elemento */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra negra */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto */
-}
+/*.servicios:hover {
+    transform: scale(1.05); /* Agrandar ligeramente el elemento 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra negra 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto 
+}*/
 
 .servicios div:hover{
     border-color:  #155F4E;
-    ;
+    transform: scale(1.05); /* Agrandar ligeramente el elemento*/ 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra negra*/ 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para el efecto*/ 
 }
 
 .servicios div:active{
     border-color: #FF961B;
-    ;
 }
 
 .servicios h1{
@@ -200,11 +135,13 @@ body {
 .servicio-info em{
     font-size: 14px;
     font-style: italic;
+    text-align: justify;
 }
 .servicio-precio{
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     margin-top:10px;
+    text-align: center;
 }
 
 footer{
@@ -218,12 +155,8 @@ footer{
     flex-flow: row wrap;
     justify-content: center;
     column-gap: 10px;
-    
-}
-
-/* Agrandar los iconos y añadir sombra al pasar el mouse */
-.cont-redes img:hover {
-    transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
+    /* Agrandar los iconos y añadir sombra al pasar el mouse */
+    /*transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
     box-shadow: 0 0 10px #FFFFFF; /* Añade una sombra blanca */
 }
@@ -235,28 +168,29 @@ footer{
 }
 
 form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
     margin: 40px 0;
 }
 
 form label, form legend{
-    display: block;
+    display: flex;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
 .input-form{
-    display: block;
+    display: flex;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
 
-.checkbox{
-    margin:20px 0;
-}
-
 .enviar{
-    width: 40%;
+    display: flex;
+    width: 20%;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
@@ -270,7 +204,7 @@ form label, form legend{
 
 .enviar:hover{
     background: #155F4E;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .banner{
@@ -300,13 +234,14 @@ form label, form legend{
 
 
 .mapa {
+    display: flex;
     width: 940px;
     padding: 3em 0;
-    /*background: linear-gradient(#FEFEFE, #888888);*/
 }
 
 /* Asegurarse de que el contenedor principal no tiene margen ni relleno que afecte */
 .main, .mapa {
+    display: flex;
     width: 100%; /* Establece el ancho al 100% */
     margin: 0; /* Elimina cualquier margen */
     padding: 0; /* Elimina cualquier relleno */
@@ -314,20 +249,21 @@ form label, form legend{
 }
 
 .mapa iframe {
+    display: flex;
     width: 100%; /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
     height: 300px; /* Altura fija, pero puedes ajustarla como necesites */
     border: none; /* Elimina el borde del iframe */
 }
 
-
-
 .mapa p{
+    display: flex;
     margin: 0 0 2em;
     text-align: center;
 }
 
 /* Estilos para la sección de la imagen de portada */
 .portada-img {
+    display: flex;
     width: 100%; /* Establece el ancho al 100% */
     margin: 0; /* Elimina cualquier margen */
     padding: 0; /* Elimina cualquier relleno */
@@ -336,9 +272,10 @@ form label, form legend{
 
 /* Estilos para la imagen dentro de la sección de portada */
 .portada-img img {
+    display: flex;
     width: 100%; /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
     height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
+    
 }
 
 /* Estilos para cuando la barra de navegación se fije */

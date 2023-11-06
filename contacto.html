@@ -36,19 +36,20 @@
                     <legend>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</legend>
                 
                     <label for="nombreapellido">Nombre y Apellido</label><br>
-                    <input type="text" id="nombreapellido" class="input-form" required placeholder="Nombre y Apellido">
+                    <input type="text" name="nombreapellido" class="input-form" required placeholder="Nombre y Apellido">
 
                     <label for="correoelectronico">Correo Electrónico</label><br>
-                    <input type="email" id="correoelectronico" class="input-form" required placeholder="email@dominio.com">
+                    <input type="email" name="correoelectronico" class="input-form" required placeholder="email@dominio.com">
 
                     <label for="telefono">Teléfono</label><br>
-                    <input type="tel" id="telefono" class="input-form" required placeholder="(xxx) xxxx xxxx">
+                    <input type="tel" name="telefono" class="input-form" required placeholder="(xxx) xxxx xxxx">
 
                     <label for="mensaje">Mensaje</label><br>
-                    <textarea cols="70" rows="10" id="mensaje" class="input-form" required placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
+                    <textarea cols="70" rows="10" name="mensaje" class="input-form" required placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
                 </fieldset>
                 
                 <input type="submit" value="Enviar formulario" class="enviar">
+                <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://lauruizdias.github.io/tp-cac-othala/mail-enviado.html"> <!--confirma envío-->
                 <input type="hidden" name="_autoresponse" value="Hola! Hemos recibido tu mensaje, pronto te estaremos contactando.">
 

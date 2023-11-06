@@ -19,7 +19,7 @@ header {
 
 .cont-logo img:hover {
     /* Agrandar el logo al pasar el mouse sobre él */
-    transform: scale(0.5,0.5); /* Ajusta el valor de escala según lo que desees */
+    transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
@@ -45,9 +45,9 @@ header {
     width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
     padding: 0 10px; /* Añade un poco de relleno a los lados si es necesario */
     box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
-    position: fixed; /* Fija la barra de navegación en la parte superior */
-    top: 0; /* Alinea la barra de navegación en la parte superior de la pantalla */
-    z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos */
+    /*position: fixed; /* Fija la barra de navegación en la parte superior */
+    /*top: 0; /* Alinea la barra de navegación en la parte superior de la pantalla */
+    /*z-index: 1000; /* Asegura que la barra de navegación se mantenga por encima de otros elementos */
 }
 
 /* Estilos para los enlaces dentro de la barra de navegación */
@@ -158,7 +158,7 @@ footer{
     /* Agrandar los iconos y añadir sombra al pasar el mouse */
     /*transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade una transición suave */
-    box-shadow: 0 0 10px #FFFFFF; /* Añade una sombra blanca */
+    /*box-shadow: 0 0 10px #FFFFFF; /* Añade una sombra blanca */
 }
 
 .copyright{
@@ -171,8 +171,7 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    margin: 40px 0;
+    
 }
 
 form label, form legend{

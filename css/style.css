@@ -256,17 +256,6 @@ form label, form legend{
     text-align: center;
 }
 /* Estilos para la imagen dentro de la sección de portada */
-/*.portada-img img {
+.portada-img img {
     display: flex;
     width: 100%; /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
-    
-    
-
-
-/* Estilos para cuando la barra de navegación se fije 
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.3s; /* Transición suave al cambiar de posición */

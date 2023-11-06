@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">    
     </head>
 
     <body>   
@@ -28,6 +28,7 @@
         </header>                                
         
         <main>
+            <script src="./js/form.js"></script>
             <section class ="principal">
                 <h1 class="titulo-principal">Consultas</h1>
             </section>
@@ -35,21 +36,20 @@
                 <fieldset>
                     <legend>Envianos un mensaje y alguien de nuestro equipo se pondrá en contacto con usted en breve.</legend>
                 
-                    <label for="nombreapellido">Nombre y Apellido</label><br>
-                    <input type="text" name="nombreapellido" class="input-form" required placeholder="Nombre y Apellido">
+                    <label for="nombre">Nombre y Apellido</label><br>
+                    <input type="text" name="nombre" class="input-form" required placeholder="Nombre y Apellido">
 
-                    <label for="correoelectronico">Correo Electrónico</label><br>
-                    <input type="email" name="correoelectronico" class="input-form" required placeholder="email@dominio.com">
+                    <label for="email">Correo Electrónico</label><br>
+                    <input type="email" name="email" class="input-form" required placeholder="email@dominio.com">
 
-                    <label for="telefono">Teléfono</label><br>
-                    <input type="tel" name="telefono" class="input-form" required placeholder="(xxx) xxxx xxxx">
+                    <label for="tel">Teléfono</label><br>
+                    <input type="tel" name="tel" class="input-form" required placeholder="(xxx) xxxx xxxx">
 
                     <label for="mensaje">Mensaje</label><br>
                     <textarea cols="70" rows="10" name="mensaje" class="input-form" required placeholder="Dejá tu mensaje o inquietud aquí..."></textarea>
                 </fieldset>
                 
                 <input type="submit" value="Enviar formulario" class="enviar">
-                <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://lauruizdias.github.io/tp-cac-othala/mail-enviado.html"> <!--confirma envío-->
                 <input type="hidden" name="_autoresponse" value="Hola! Hemos recibido tu mensaje, pronto te estaremos contactando.">
 

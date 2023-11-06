@@ -68,16 +68,13 @@ header {
     transition: background-color 0.3s; /* Transición suave para el efecto de hover */
 }
 
+/* Estilos para el efecto hover en los enlaces/botones */
 .cont-nav a:hover{
     color: #FF961B; /* Cambia el color de fondo al pasar el ratón por encima */
     text-decoration: underline;
     /* Agrandar los enlaces al pasar el mouse sobre ellos */
     transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
     transition: box-shadow 0.3s; /* Transición suave para el efecto de sombra */
-}
-
-/* Estilos para el efecto hover en los enlaces/botones */
-.cont-nav a:hover {
     box-shadow: 0 0 10px #FFFFFF; /* Sombra blanca alrededor del botón */
     color: #FFFFFF; /* Opcional: Cambiar el color del texto si es necesario */
 }

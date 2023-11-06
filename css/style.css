@@ -1,6 +1,5 @@
 body{
     background: linear-gradient(#FFFFFF, #EBE3C8, #cccccc);
-    /*padding-top: 60px; /* Ajusta este valor según la altura de tu barra de navegación, para evitar que el contenido se oculte detrás de la barra de navegación fija */
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -17,14 +16,14 @@ header {
     background-color: #155F4E;    
 }    
 
-.cont-logo img:hover {
+/*.cont-logo img:hover {
     /* Agrandar el logo al pasar el mouse sobre él */
-    transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
-    transition: transform 0.3s ease; /* Añade una transición suave */
-}
+   /* transform: scale(1.1); /* Ajusta el valor de escala según lo que desees */
+   /* transition: transform 0.3s ease; /* Añade una transición suave
+}*/
 
 
-@keyframes rotate-logo {
+/*@keyframes rotate-logo {
     from {
         transform: rotate(0deg);
     }
@@ -261,15 +260,16 @@ form label, form legend{
     /*margin: 0; /* Elimina cualquier margen */
     /*padding: 0; /* Elimina cualquier relleno */
     /*overflow: hidden; /* Asegura que no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* Estilos para la imagen dentro de la sección de portada */
-.portada-img img {
+/*.portada-img img {
     display: flex;
     width: 100%; /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
-    height: auto; /* Mantiene la proporción de la imagen */
     
-}
+    
+
 
 /* Estilos para cuando la barra de navegación se fije 
 .fixed-nav {
@@ -278,7 +278,7 @@ form label, form legend{
     left: 0;
     right: 0;
     transition: all 0.3s; /* Transición suave al cambiar de posición */
-}
+
 
 
 

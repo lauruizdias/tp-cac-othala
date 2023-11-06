@@ -248,7 +248,6 @@ form label, form legend{
     /*margin: 0; /* Elimina cualquier margen */
     /*padding: 0; /* Elimina cualquier relleno */
     /*overflow: hidden; /* Asegura que no se desborde del contenedor */
-    
 }
 
 .principal-mail p{
@@ -256,7 +255,8 @@ form label, form legend{
     text-align: center;
 }
 /* Estilos para la imagen dentro de la sección de portada */
-.portada-img img {
+.portada-img img{
     display: flex;
     width: 100%; /* Establece el ancho al 100% para que ocupe todo el espacio disponible */
     height: auto; /* Mantiene la proporción de la imagen */
+}

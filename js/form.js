@@ -18,5 +18,14 @@ function validarFormulario() {
         return false;
     }
 
+    // Validación de formato de telefono
+    var telRegExp = (3)""(4)""(4);
+    if (!tel.match(telRegExp)) {
+        alert("Sólo números.");
+        return false;
+    }
+
     return true;
+
+
 }

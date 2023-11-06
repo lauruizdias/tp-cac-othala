@@ -17,6 +17,14 @@ function validarFormulario() {
         return false;
     }
 
+    // Validación de formato de número de teléfono en Argentina
+    var telRegExp = /^(?:\+54|0)(?:11|2[0-9]|3[0-9]|4[0-9]|5[0-9]|9[0-9])[0-9]{6,7}$/;
+    if (!tel.match(telRegExp)) {
+        alert("El número de teléfono no es válido en Argentina.");
+        return false;
+    }
+
+    return true;
     return true;
 
 
